@@ -17,7 +17,7 @@ const navigation = {
   topMenu: [
     {name: 'Playground', href: '/playground'},
     {name: 'Works', href: '/works'},
-    {name: 'Videos2', href: '/videos'},
+    {name: 'Videos', href: '/videos'},
   ],
   social: [
     {
