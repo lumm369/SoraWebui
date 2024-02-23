@@ -5,6 +5,7 @@ import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {ReactNode} from 'react';
 import {locales} from '~/config';
 import { CommonProvider } from '~/context/common-context';
+import GoogleAdsense from '~/components/GoogleAdsense';
 
 const inter = Inter({subsets: ['latin']});
 
@@ -43,10 +44,12 @@ export default async function LocaleLayout({
                   `,
         }}
       />
+      <GoogleAdsense />
     </head>
     <body suppressHydrationWarning={true} className={clsx(inter.className, 'flex h-full flex-col bg-[#020d24]')}>
     <CommonProvider>
       {children}
+      <GoogleAdsense />
     </CommonProvider>
     </body>
     </html>
